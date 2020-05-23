@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- Pagina responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Link de bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Siatec</h1>
+				<h2>Acceso al sistema</h2>
+				<h3>Registro de usuarios</h3>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h4>Usuarios</h4>
+				<img src="img/servicios.jpg" class="img-fluid">
+			</div>
+			<div class="col-md-6">
+				<h4>Registrar</h4>
+				<form action="registrar.php" method="POST">
+					<div class="form-group">
+						<label>Ingrese usuario</label><br>
+						<input type="text" name="usuario" placeholder="Usuario" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Ingrese clave</label><br>
+						<input type="password" name="clave" placeholder="clave" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label>Ingrese descripcion</label><br>
+						<input type="text" name="descripcion" placeholder="tipo usuario" class="form-control" required>
+					</div>
+					<input type="submit" name="enviar" value="registrar datos" class="btn btn-primary">
+					<a href="listar.php" class="btn btn-success">Listar</a>
+					<a href="eliminar1.php" class="btn btn-danger">Eliminar</a>
+				</form>
+			</div>
+			<div class="col-md-3">
+				<img src="img/derecha.png" class="mx-auto d-block">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
